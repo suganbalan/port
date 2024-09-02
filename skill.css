@@ -1,0 +1,114 @@
+
+.skills{
+    width: 100vh;
+    margin: 10px auto;
+    background-color: #efe9d6;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform:uppercase;
+    box-shadow: 0 14px 30px #957e33,0 10px 10px #f7d978;
+}
+.skills ul{
+    display: flex;
+    flex-direction: column;
+}
+.skills h1{
+    background-color: #dac78a;
+    border-radius: 10px;
+    text-align: center;
+}
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background-color: #efe9d6;
+    display: block;
+    height: 15px;
+    border: 1px solid  #957e33;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px #957e33,0 1.5px 1.5px #f7d978;
+    transition: all cubic-bezier(.25,.8,.25,1);
+
+}
+.bar:hover{
+    box-shadow: 0 5px 3px #ccaf4d,0 2.5px 2.5px #f7d978;
+
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, #dac78a 0% , #957e33 100%);
+}
+.Communiction{
+    width: 85%;
+    animation: Communiction 3s;
+}
+.problem_solving{
+    width: 75%;
+    animation: problem_solving 3s;
+}
+.team_collaboration{
+    width: 85%;
+    animation: team_collaboration 3s;
+}
+.continious_learning{
+    width: 90%;
+    animation: continious_learning 3s;
+}
+.time_management{
+    width: 95%;
+    animation: time_management 3s;
+}
+@keyframes time_management {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+    
+}
+@keyframes continious_learning {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes team_collaboration {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+    
+}
+@keyframes problem_solving {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+    
+}
+@keyframes Communiction {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+    
+}
+.per{
+    display: none;
+}
+.bar:hover .per{
+    display:block;
+}
